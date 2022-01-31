@@ -1,0 +1,12 @@
+[Unit]
+Description=Run my custom task at shutdown
+DefaultDependencies=no
+Before=shutdown.target
+
+[Service]
+Type=oneshot
+ExecStart=/etc/gdm3/PostSession/Default
+TimeoutStartSec=0
+
+[Install]
+WantedBy=shutdown.target

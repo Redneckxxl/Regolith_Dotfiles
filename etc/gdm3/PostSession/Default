@@ -1,0 +1,5 @@
+#!/bin/sh
+
+sed -i '' -e 's|^XSession=.*|XSession=ubuntu|' /var/lib/AccountsService/users/redneck
+
+exit 0

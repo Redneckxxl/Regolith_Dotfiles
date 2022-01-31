@@ -1,0 +1,19 @@
+! Set preferences
+i3-wm.bar.position: bottom
+gnome.terminal.use-transparent-background: true
+gnome.terminal.background-transparency-percent: 15
+
+! Set keybindings
+i3-wm.binding.launcher.app: d
+i3-wm.binding.launcher.cmd: Shift+d
+i3-wm.binding.launcher.window: x
+i3-wm.binding.file_search: Shift+x
+i3-wm.binding.files: m
+
+! Disable unused keybindings
+i3-wm.binding.settings: Mod1+Shift+y
+i3-wm.binding.display: Mod1+Shift+u
+i3-wm.binding.wifi: Mod1+Shift+i
+i3-wm.binding.bluetooth: Mod1+Shift+o
+i3-wm.binding.sound: Mod1+Shift+p
+i3-wm.binding.help: Mod1+shift+question
