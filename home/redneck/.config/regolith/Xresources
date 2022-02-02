@@ -1,7 +1,8 @@
 ! Set preferences
 i3-wm.bar.position: bottom
 gnome.terminal.use-transparent-background: true
-gnome.terminal.background-transparency-percent: 15
+gnome.terminal.background-transparency-percent: 30
+gnome.wallpaper: /home/socrates/.local/share/backgrounds/2022-01-12-14-36-11-mars-hd.jpg
 
 ! Set keybindings
 i3-wm.binding.launcher.app: d
@@ -11,9 +12,13 @@ i3-wm.binding.file_search: Shift+x
 i3-wm.binding.files: m
 
 ! Disable unused keybindings
-i3-wm.binding.settings: Mod1+Shift+y
 i3-wm.binding.display: Mod1+Shift+u
 i3-wm.binding.wifi: Mod1+Shift+i
 i3-wm.binding.bluetooth: Mod1+Shift+o
 i3-wm.binding.sound: Mod1+Shift+p
 i3-wm.binding.help: Mod1+shift+question
+
+! Enable Greenclip
+i3-wm.program.1: greenclip clear && greenclip daemon
+i3-wm.binding.settings: c
+i3-wm.program.settings: rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'

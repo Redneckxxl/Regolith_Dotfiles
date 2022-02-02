@@ -1,1 +1,18 @@
-source $HOME/.zshenv
+# Remove Snap from path
+PATH=$(echo "$PATH" | sed 's@:/snap/bin$@@g')
+
+# Add Local Bin to path
+PATH=$HOME/.local/bin:$PATH
+
+# Add Android Studio to path
+export ANDROID_HOME=$HOME/Android/Sdk
+PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH
+
+# Add fnm to path
+PATH=$HOME/.fnm:$PATH
+
+# Export the PATH env var
+export PATH
+
+# Setup env for fnm
+eval "$(fnm env)"

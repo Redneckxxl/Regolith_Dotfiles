@@ -1,3 +1,3 @@
 # Displays network load
 [net-traffic]
-interval=1
+interval=repeat
