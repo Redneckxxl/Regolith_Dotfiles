@@ -2,7 +2,7 @@
 i3-wm.bar.position: bottom
 gnome.terminal.use-transparent-background: true
 gnome.terminal.background-transparency-percent: 30
-gnome.wallpaper: /home/socrates/.local/share/backgrounds/2022-01-12-14-36-11-mars-hd.jpg
+gnome.wallpaper: $HOME/.local/share/backgrounds/2022-01-12-14-36-11-mars-hd.jpg
 
 ! Set keybindings
 i3-wm.binding.launcher.app: d
